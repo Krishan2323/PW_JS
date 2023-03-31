@@ -1,5 +1,3 @@
-// Quick Revision
-
 // Mocha -> LiveScript -> Javascript
 // (1995 -> 1996 -> till Date)
 // Netscape developed Mocha Programming inn (1995) which give the more functionality for the web
