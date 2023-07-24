@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    <h1 id="one">
+        <span>Nothing</span>
+        <!-- yha pr span tag innerHTML hai h1 Tag ka -->
+        Krishan
+    </h1>
+    <h2>Krishan</h2>
+    <h2 class="kumar">Kumar</h2>
+    <h2 id="kataria">Kataria</h2>
+    <ul>
+        <li class="tech">1</li>
+        <li class="tech">2</li>
+        <li class="tech">3</li>
+        <li class="tech">4</li>
+    </ul>
+
+    <script>
+        // Select and Target element thorugh the ID Selector
+        let one = document.getElementById("one")
+        console.log(one)
+        // Select the inner Text in element
+        console.log(one.innerText)
+        // Agr hum element k ander ek element ko target krna hai tb .innerHTML ka use krte hai
+        console.log(one.innerHTML)
+
+
+        // Select and target element through the class selector
+        let tech = document.getElementsByClassName("tech")
+        console.log(tech)
+        console.log(tech[3])
+        console.log(tech[3].innerHTML)
+        console.log(tech[3].innerText)
+        // Manipulate the inner text of the element
+        tech[1].innerText = "Krishan"
+
+
+        // Select and Target the element through the  tag name
+        let h1 = document.getElementsByTagName("h1")
+        console.log(h1)
+        console.log(h1[0].innerText)
+        h1[0].innerText = "Hello Krishan Kataria"
+        // give the CSS to the element through the Javascript
+        h1[0].style.backgroundColor = "hotpink"
+        h1[0].style.color = "white"
+        h1[0].style.border = "2px solid black"
+        h1[0].style.borderRadius = "50px"
+        h1[0].style.textAlign = "center"
+
+
+        // Query Selector
+        let kumar = document.querySelector(".kumar")
+        kumar.style.color = "hotpink"
+        let kataria = document.querySelector("#kataria")
+        kataria.style.color = "blue"
+
+        kumar.className = "nn"
+        console.log(kumar)
+        kumar.classList = "k1 k2 k3 k4"
+        // add multiple class
+
+        kataria.setAttribute("title", "This is a sir name")
+    </script>
+</body>
+
+</html>
